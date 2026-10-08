@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff8a00">
+  <title>GSM TOOL — Service Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#home">
+    <span class="brand-icon">G</span>
+    <span>GSM <b>TOOL</b></span>
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#orders">Orders</a>
+    <a href="#support">Support</a>
+  </nav>
+
+  <div class="top-actions">
+    <button class="wallet-btn" id="walletBtn">Wallet $0.00</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-head">
+    <div class="side-brand"><span class="brand-icon small">G</span> GSM TOOL</div>
+    <button id="closeMenu" class="close-btn">×</button>
+  </div>
+  <a href="#home" class="side-link">⌂ <span>Dashboard</span></a>
+  <a href="#services" class="side-link">⚙ <span>Services</span></a>
+  <a href="#orders" class="side-link">▣ <span>My Orders</span></a>
+  <a href="#wallet" class="side-link">◈ <span>Wallet</span></a>
+  <a href="#support" class="side-link">? <span>Support</span></a>
+  <button class="login-btn" id="loginBtn">Login / Register</button>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<main id="home">
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">PROFESSIONAL MOBILE SERVICE PORTAL</p>
+      <h1>Fast & Simple<br><span>GSM Services</span></h1>
+      <p class="hero-text">
+        Manage your mobile-service orders, wallet and support from one clean dashboard.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#services">View Services</a>
+        <button class="btn light" id="heroLogin">Login</button>
+      </div>
+    </div>
+
+    <div class="hero-device">
+      <div class="phone">
+        <div class="speaker"></div>
+        <div class="phone-screen">
+          <div class="screen-logo">GSM<br><small>TOOL</small></div>
+          <div class="screen-card">SERVICE PORTAL</div>
+          <div class="screen-bars"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-features">
+    <article><div class="feature-icon">24</div><h3>24 Hours Support</h3><p>Get help through our support system.</p></article>
+    <article><div class="feature-icon">₹</div><h3>Attractive Prices</h3><p>Clear and simple service pricing.</p></article>
+    <article><div class="feature-icon">✓</div><h3>Simple Instruction</h3><p>Easy steps for every service order.</p></article>
+    <article><div class="feature-icon">◆</div><h3>Secure Platform</h3><p>Your account and orders stay organized.</p></article>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark">SERVICE CATALOG</p>
+        <h2>Popular Services</h2>
+      </div>
+      <input id="serviceSearch" class="search" type="search" placeholder="Search services...">
+    </div>
+
+    <div class="service-grid" id="serviceGrid">
+      <article class="service-card" data-name="device diagnostics">
+        <div class="service-icon">📱</div>
+        <h3>Device Diagnostics</h3>
+        <p>Check supported device information and service requirements.</p>
+        <div class="service-bottom"><span>From $2.00</span><button class="order-btn" data-service="Device Diagnostics" data-price="2">Order</button></div>
+      </article>
+
+      <article class="service-card" data-name="software support">
+        <div class="service-icon">⚙️</div>
+        <h3>Software Support</h3>
+        <p>Software troubleshooting and general technical assistance.</p>
+        <div class="service-bottom"><span>From $3.00</span><button class="order-btn" data-service="Software Support" data-price="3">Order</button></div>
+      </article>
+
+      <article class="service-card" data-name="imei information">
+        <div class="service-icon">🔎</div>
+        <h3>IMEI Information</h3>
+        <p>Organize device information for supported service requests.</p>
+        <div class="service-bottom"><span>From $1.50</span><button class="order-btn" data-service="IMEI Information" data-price="1.5">Order</button></div>
+      </article>
+
+      <article class="service-card" data-name="firmware assistance">
+        <div class="service-icon">🧩</div>
+        <h3>Firmware Assistance</h3>
+        <p>General firmware and update support for compatible devices.</p>
+        <div class="service-bottom"><span>From $4.00</span><button class="order-btn" data-service="Firmware Assistance" data-price="4">Order</button></div>
+      </article>
+
+      <article class="service-card" data-name="account support">
+        <div class="service-icon">👤</div>
+        <h3>Account Support</h3>
+        <p>Help with account-related service requests and status.</p>
+        <div class="service-bottom"><span>From $2.50</span><button class="order-btn" data-service="Account Support" data-price="2.5">Order</button></div>
+      </article>
+
+      <article class="service-card" data-name="technical support">
+        <div class="service-icon">🛠️</div>
+        <h3>Technical Support</h3>
+        <p>Open a support request and receive a response from your team.</p>
+        <div class="service-bottom"><span>From $1.00</span><button class="order-btn" data-service="Technical Support" data-price="1">Order</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong>1K+</strong><span>Orders</span></div>
+    <div><strong>24/7</strong><span>Support</span></div>
+    <div><strong>99%</strong><span>Response Rate</span></div>
+    <div><strong>Fast</strong><span>Processing</span></div>
+  </section>
+
+  <section class="section orders-section" id="orders">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark">ACCOUNT</p>
+        <h2>Recent Orders</h2>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Order ID</th><th>Service</th><th>Price</th><th>Status</th></tr></thead>
+        <tbody id="orderTable">
+          <tr><td colspan="4" class="empty">No orders yet. Select a service above.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="support-section" id="support">
+    <div>
+      <p class="eyebrow">NEED HELP?</p>
+      <h2>Open a Support Case</h2>
+      <p>Describe your question and keep your service requests organized.</p>
+    </div>
+    <button class="btn dark" id="supportBtn">Create Case</button>
+  </section>
+
+  <section class="section about" id="about">
+    <p class="eyebrow dark">ABOUT GSM TOOL</p>
+    <h2>One place for your service workflow.</h2>
+    <p>Use this frontend as a starting point for your own service portal. Connect it to Firebase, PHP/MySQL, or another backend when you are ready for real accounts, payments and order processing.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div><strong>GSM TOOL</strong><p>Professional mobile service portal.</p></div>
+  <div class="footer-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#support">Support</a></div>
+  <p>© <span id="year"></span> GSM TOOL. All rights reserved.</p>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
